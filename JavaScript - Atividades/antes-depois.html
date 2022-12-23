@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio das mensagens</title>
+
+    <body>
+
+     <h1>Antes e Depois</h1>
+        
+    <div id="botao" onclick="clicar()">
+        <button>Sucessor e Antecessor</button>        
+    </div>
+
+    
+    <script>
+            function clicar () {
+                var num = prompt ('Digite um numero inteiro : ')
+                var menor =  0
+                var maior =  1000000
+
+            if (num > menor && num < maior)
+                document.write(`o numero ${num} é antecessor de ${maior} <br>`)
+                document.write(`o numero ${num} é sucessor de ${menor}`)
+            }             
+    </script>
+    
+    
+</body>
+</html>

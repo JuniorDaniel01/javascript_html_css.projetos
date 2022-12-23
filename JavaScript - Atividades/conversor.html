@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de medidas</title>
+
+    <body>
+
+     <h1>Clique no botão abaixo para converter!</h1>
+        
+    <div id="botao" onclick="clicar()">
+        <button>Conversor</button>        
+    </div>
+
+    
+    <script>
+            function clicar () {
+                var n1 = prompt ('Digite uma distancia em metros: ')
+                var Km = Number ((n1/1000))
+                var Hect = Number((n1/100))
+                var Deca = Number((n1/10))
+                var Deci = Number((n1*10))
+                var Cent = Number((n1*100))
+                var Mili = Number((n1*1000))
+
+                
+                document.write('A distância convertida corresponde a ... <hr>') 
+                document.write (`O valor é ` + Km.toFixed(3).replace('.' , ',') + ` Quilômetros <strong> (Km) </strong> <br>`)
+                document.write (`O valor é ` + Hect.toFixed(3).replace('.' , ',') + ` Hectômetros <strong> (Hm) </strong> <br>`)
+                document.write (`O valor é ` + Deca.toFixed(3).replace('.' , ',') + ` Decâmetros <strong> (Dam) </strong> <br>`)
+                document.write (`O valor é ` + Deci.toLocaleString() + ` Decimetros <strong> (Dm) </strong> <br>`)
+                document.write (`O valor é ` + Cent.toLocaleString() + ` Centimetros <strong> (Cm) </strong> <br>`)
+                document.write(`O valor é ` + Mili.toLocaleString() + ` Milimetros <strong> (Mm) </strong>`)              
+            }             
+    </script>
+    
+    
+</body>
+</html>

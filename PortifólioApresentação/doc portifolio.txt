@@ -1,0 +1,10 @@
+Portifólio
+
+sobre mim
+
+Meu nome é Daniel Sales,ou “danicode”. <br> Sou freelancer como Front-end developer e UI Designer.<br> Desenvolvo
+            interfaces modernas e de alta qualidade,<br> concentrado em performance, animações, responsividade e SEO.
+
+Olá! Eu me chamo Daniel. 🤓 <br>
+            Apaixonado por Tecnologia da Informação e tudo que ela representa em escala global.
+            Comecei os meus estudos nessa área de forma autodidata e alguns cursos pela web. Hoje em busca de um de conhecimento mais sólido, comecei a graduação em Análise e Desenvolvimento de Sistemas, pela UNIFACS. 

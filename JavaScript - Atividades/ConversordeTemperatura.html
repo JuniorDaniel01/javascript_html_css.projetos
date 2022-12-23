@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperaturas</title>
+    <style>
+           body {
+               background-color: rgb(174, 180, 182); text-align: center;
+           }
+           h1 {
+           text-align: center; font-style: italic; font-size: 60px;
+           }
+           button {
+            height: 50px; width: 100px; 
+           }
+                   
+    </style>
+</head>
+<body>
+    <h1>Conversor de Temperaturas</h1>
+    
+    <div id="botao" onclick="clicar()">
+        <button>Conversor</button>        
+    </div> 
+    
+    <h3>Clique no botão acima para iniciar.</h3>
+
+    
+    <script>
+    
+    function clicar() {
+       var temp = prompt ('Digite a temperatura em ºC (Celsius): ')
+       var graus = Number ((temp * 9/5) + 32)
+       var graus1 = Number (temp - 273,15)
+
+       document.write (`A temperatura de ` + temp + `º Celsius corresponde a ... <br><br>` )
+       document.write (`A temperatura é de ` + graus.toFixed().replace('.' , ',') +  `ºF ` + `(Fahrenheith) <br>`)
+       document.write (`A temperatura é de ` + graus1.toFixed().replace('.' , ',') + `ºK ` + `(Kelvin)`)
+    }
+
+    </script>
+
+
+
+</body>
+</html>

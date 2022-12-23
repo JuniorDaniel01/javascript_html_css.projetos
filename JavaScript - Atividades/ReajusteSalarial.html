@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste Salarial</title>
+
+</head>
+<body>
+    
+    <div id="botao" onclick="clicar()">
+        <h1>Calculo Salarial</h1>
+        <button>Reajuste Salarial</button>
+        <p>Clique no botão acima para iniciar.</p><br>
+    </div>
+   
+   <script>
+        var a = document.getElementById('botao')
+            function clicar () {
+                var nome =  window.prompt('Qual é o nome do funcionário?')
+                var sal = Number.parseFloat (window.prompt('Qual é o salário do funcionário?'))
+                var porc =  window.prompt('Qual será a porcentagem aplicada?') 
+                var s = Number.parseFloat((sal * porc ) / 100)
+                var stot = sal + s
+                document.write  (`${nome} recebeu um aumento salarial de ${porc}% <br>`)
+                document.write  (`O salário atual era de R$${sal.toFixed(2).replace('.' , ',')} <br>`)
+                document.write (`Com a porcentagem de ${porc}%, o salário vai aumentar R$${s.toFixed(2).toLocaleString().replace('.' , ',')} no próximo mês.<br>`)
+                document.write (`E apartir dai, ${nome} vai passar a ganhar R$${stot.toFixed(2).replace('.' , ',')}<br>`)
+        }
+     </script>
+
+</body>
+</html>

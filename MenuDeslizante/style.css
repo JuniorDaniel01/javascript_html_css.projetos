@@ -1,0 +1,80 @@
+body{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+    
+  /*estilo do nosso link*/
+  a {
+    position: absolute;
+    z-index: 10;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.4em;
+    padding-left: 22px;
+    display: block;
+    width: 160px;
+    height: 40px;
+    text-decoration: none;
+}
+    
+  /*ao passar o mouse sobre nosso link*/
+
+a:hover {
+    color: yellowgreen;
+    border-right: 2px solid #fff;
+}
+
+.menu {
+    position: relative;
+    list-style: none;
+    width: 182px;
+    padding: 40px 0;
+    margin: auto;
+}
+
+  .menu:before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    background: #5b9780; 
+    height: 100%;
+    width: 182px;
+    margin-top: -40px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+
+  .menu li{
+    height: 40px;
+    width: 100%;
+  }
+
+  .menu li .submenu{
+    width: 152px;
+    height: 220px;
+    padding: 15px;
+    margin-top: 16px;
+    background: yellowgreen;
+    overflow: hidden;
+    color: #fff;
+    text-align: right;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    opacity: 0;
+    
+    -webkit-transition: 1s left,1s width,1s opacity;
+    transition: 1s left,1s width,1s opacity;
+    
+    border-top-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    
+    border-bottom-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+}
+
+.menu li:hover .submenu{
+    left: 182px;
+    opacity: 1;
+    width: 276px;
+}

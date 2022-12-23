@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio das mensagens</title>
+    <style>
+        #botao {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+    <body>
+
+    <div id="botao" onclick="clicar()">
+        <button>Inicie o Desafio!</button>        
+    </div>
+
+    
+   
+   <script>
+            function clicar () {
+                var nome = prompt ('Qual o seu nome?')
+                var idade = prompt (`Olá, ${nome}! Qual é a sua idade?`)  
+                alert (`Acabei de conhecer o ${nome} , que tem ${idade} anos de idade , e foi um enorme prazer!`)           
+            }
+        
+    </script>
+
+</body>
+</html>

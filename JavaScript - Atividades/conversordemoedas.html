@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    
+</head>
+<body>
+
+    <script>
+
+        var dolar = window.prompt ('Olá! , Qual a cotação do dolár hoje?')
+        function clicar () {
+        var reais = prompt ('Quantos reais voce possui na carteira?')
+        var conv = Number(reais * dolar)
+
+        alert(`Você conseguirá comprar ${conv} U$$ Doláres.`)
+        }
+
+    </script>
+    
+    <h1> Conversor Monetário </h1>
+
+    <div id="button" onclick="clicar()">
+        <button>
+            CONVETER
+        </button>
+        <h4>Clique no botão acima para iniciar!</h4>
+    </div>
+
+    
+</body>
+</html>

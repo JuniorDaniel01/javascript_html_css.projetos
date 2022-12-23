@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Poppins:ital@1&display=swap');
+
+/* Resetando formatações pré definidas pelo navegador */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-size: 1em; /* 1em = 16 px */ 
+    font-family: 'Poppins', 'lato', sans-serif;
+    background-color: #CCC 
+ 
+}
+
+/* Layout */
+
+#area-cabecalho {
+    background-color: #f7b600;
+    padding: 15px;
+    text-align: center;
+}
+
+#area-logo, #area-menu { 
+    padding: 10px;
+}
+
+#area-principal { 
+    display: grid;
+    grid-template-columns:auto auto;
+/*  grid-template-rows: auto;
+    flex-direction: column;  */
+    padding: 15px;
+}
+
+.conteudo-lateral {
+    
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+#area-postagens { 
+    margin-left: 30px;
+}
+
+#area-lateral { 
+    margin-right: 50px;
+}
+
+.postagem { 
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white; 
+} 
+
+.postagem-lateral {
+     font-size: 0.9em;
+     padding: 10px;
+     margin-bottom: 15px;
+     background-color: white;
+}
+
+.postagem-lateral-1 {
+    margin-bottom: 5px;
+    border-bottom: 1px dotted #CCC;
+}
+
+.postagem-lateral-2 {
+    margin-top: 5px;
+}
+
+.menu-lateral {
+    cursor: pointer;
+    background-color: white;
+}
+
+/* Formatação do menu */
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #f7b600;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+       list-style: none;
+}
+
+#area-cabecalho a:link, #area-cabecalho a:visited {
+    color: #FFF;
+    padding: 8px 12px;
+}
+
+#area-cabecalho a:hover {
+    color: #f7b600;
+    background: #FFF;
+    text-decoration: none;
+}
+
+
+/* Formatações em geral */ 
+
+h1 {
+    color: #4e4e4e;
+    font-size: 2.5em;
+}
+
+.white {
+    color: white;
+}
+
+h2 {
+    color: #f7b600;
+}
+
+h3 {
+
+    color: #565656;
+    background: #CCC;
+    padding: 5px;
+}
+
+.data-postagem { 
+    font-size: 0.8em;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+#rodape {
+    text-align: center;
+    padding: 2px;
+    background: #ccc;
+    font-size: 10px;
+}

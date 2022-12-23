@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Grid</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            color: #000;
+        }
+    
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto;  
+            grid-gap: 5px;
+        }
+    
+        .item {
+            background-color: #048;
+            color: #fff;
+            border: 1px solid #000;
+            text-align: center;
+        }
+
+        .it1 {
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="item">CBF Cursos 1</div>
+    <div class="item">CBF Cursos 2</div>
+    <div class="item">CBF Cursos 3</div>
+    <div class="item">CBF Cursos 4</div>
+    <div class="item">CBF Cursos 5</div>
+    <div class="item">CBF Cursos 6</div>
+    <div class="item">CBF Cursos 7</div>
+    <div class="item">CBF Cursos 8</div>
+    <div class="item">CBF Cursos 9</div>
+    </div>
+</body>
+</html>

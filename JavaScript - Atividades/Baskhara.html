@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Baskhara</title>
+    <style>
+        body{
+           text-align: center;
+           margin-top: 30px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Resolvendo Baskhara</h1>
+    <div id="button" onclick="clicar()">
+        <button>Calcular</button>
+    </div>
+
+    <p>
+        Tendo uma equação no formato ax² + bx + c = 0, aperte o botão <br>
+        acima para calcular o valor de DELTA. 
+    </p>
+
+    <script>
+        function clicar() {
+            var A = Number(prompt('Digite o valor de A :'))
+            var B = Number(prompt('Digite o valor de B :'))
+            var C = Number(prompt('Digite o valor de C :'))
+            var RES = Number( B**2 - 4 * A * C )
+            
+            
+            document.write(`A equação atual é ` + A + `x² + ` + B + `x + ` + C + ` = 0 <br>`)
+            document.write(`O cálculo realizado será DELTA = ` + B + `²  - ` + 4 + ` . ` + A + ` . ` + 2 + `<br>`)
+            document.write (`O valor calculado de DELTA é : ${RES} <br>`) 
+           
+        } 
+    </script>
+</body>
+</html>

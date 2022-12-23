@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando Produtos</title>
+
+    <body>
+        
+    <div id="botao" onclick="clicar()">
+        <button>Comprando Produtos</button>        
+    </div>
+
+    
+    <script>
+            function clicar () {
+                var produto = prompt ('Digite o nome do produto: ')
+                var n1 = Number(prompt ('Qual o valor do produto?'))
+                var n2 = Number(prompt('Qual foi o valor pago na hora da compra?'))
+                
+                if(n2 < n1){
+                    alert ('Saldo insuficiente!')
+                }else {
+                    var troco = n2-n1
+
+                         alert(
+                        `Você comprou um ${produto} que custou ${n1} R$. 
+                         Deu ${n2} R$ em dinheiro e vai receber ${troco} R$ de troco. 
+                         OBRIGADO, VOLTE SEMPRE!`)    
+                     
+                } 
+           
+            }
+    </script>
+    
+    
+</body>
+</html>

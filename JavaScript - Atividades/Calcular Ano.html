@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Ano Bissexto</title>
+</head>
+<body>
+
+    <h1>Ano BISSEXTO</h1>
+
+    <div id="button" onclick="clicar()">
+        <button>Verificar</button>
+    </div>
+    <p>Clique no botão acima para verificar</p>
+
+    <script>
+
+        function clicar() {
+
+            var ano = Number(prompt('Digite o ano: '))
+
+                document.write(`Analisando o ano de ${ano} ... <br><br>`)
+                
+
+            if  (ano % 4 == 0 && ano % 100 != 0 || ano % 400 == 0) {
+               
+                document.write(`O ano foi verificado com êxito , ${ano} é bissexto.`)   
+           
+            }else {
+                document.write(`O ano foi verificado com êxito , ${ano} não é bissexto. `)
+            }
+                     
+        }
+
+    </script>
+    
+</body>
+</html>

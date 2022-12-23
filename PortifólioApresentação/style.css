@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2? family= Lato:wght@400;700 & display=swap');
+
+/* Zerando CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+/*  background-color white;
+    color: black; */
+    background-color: black;
+    color: white; 
+    font-size: 100%;
+}
+
+.d {
+    color: rgb(22, 143, 224);
+}
+
+.menu-bar {
+    display: flex;
+    position: relative; 
+    justify-content: space-between; 
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 60%;  
+    gap: 10px;    
+    font-weight: 500;
+    font-family: "Saira";
+/*  font-weight: 500;  */
+}
+
+.menu-bar a {
+    padding: 5px;  
+    transform: 2ms ease-in;
+/*  font-size: 1rem; 
+    justify-content: center;
+    font-family: "Saira"; */ 
+    position: relative;  
+    text-decoration: none;
+    color: #b0b0b0;
+}
+
+.menu-bar :hover {
+  color: white; 
+}
+
+.menu-bar a:before {
+  content: ' ';
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
+  width: 0px;
+  height: 1px;
+  background-color: rgb(22, 143, 224);
+  transition: all 0.3s ease; 
+}
+
+.menu-bar a:hover:before {
+   width: 85%;
+}
+
+.titulo {
+    display: flex;
+    position: absolute;
+    padding-top: 1px;
+    margin-left: 15px;
+    font-weight: 500;
+    font-family: "Saira";
+}
+
+/*.hr {
+    color: #97cc1d;
+}
+*/
+
+.conteudo {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    flex-direction: column;
+}
+
+/*#name {
+    font-size: 2.8rem;
+}
+*/
+
+.descricao {
+    position: relative;
+    flex-wrap: nowrap;
+    flex-direction: row; 
+    color: #fafafa; 
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: "Saira";
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.name { 
+    font-size: 4.6rem;
+    font-weight: 500;
+}
+
+#botao {
+    background: linear-gradient(89.16deg, #06090F -7.21%, #00A3FF 148.5%);
+    backdrop-filter: blur(10px);
+    padding: 15px 30px;
+    max-width: 270px; 
+    width: 250px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(22, 143, 224);
+    transition: all 0.5s ease;
+    margin-top: 30px;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: "Saira";
+}
+
+#botao:hover {
+    width: 270px;
+  }
+  
+a {
+    text-decoration: none;
+    color: #fafafa;
+}
+
+/* conteúdo secundário */
+
+.conteudo-secundario {
+   align-items: center;
+   justify-content: center;
+}
+
+.titulo-dois {
+   margin-top: 20%;
+   margin-left: 50px;
+   font-family: "Saira";
+   color: #fafafa;
+   font-size: 2.8rem;
+   font-weight: 500;
+}
+
+.descricao-dois {
+    margin-top: 2%;
+    margin-left: 50px;
+    line-height: 3.2rem;
+    color: #b0b0b0;
+    font-family: "Saira";
+    font-size:1.5rem;
+/*    font-size: 1.8rem; */
+/*  font-weight: 500;  */
+ }
+
+.projetos {
+    margin-top: 17%;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #fafafa;
+    font-family: "Saira";
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.box-one {
+    
+/*  box-sizing: border-box; */
+/*  display: inline-block; */
+/*  flex-direction: column;    
+    justify-content: center;
+    align-items: center; */
+    border:1px solid #B22222;
+    background-color: #06090f;
+    padding: 20px 45px;
+    width: 445px;
+    height: 265px;
+    float: left; 
+    margin-left: 50px;
+    color: #fafafa;
+    font-size: 1.4rem;
+    font-weight: 500;
+    box-sizing: border-box;
+    font-family: "Saira";
+    text-align: left;
+}
+
+.box-one-title {
+    color: #fafafa;
+}
+
+.box-one-description {
+    color: #b0b0b0;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.box-one-hover a {
+
+    transform: 2ms ease-in;
+    position: relative;  
+    text-decoration: none;
+    color: #e51d37; 
+}
+
+.box-one-hover a:before {
+
+  content: ' ';
+  position: absolute;
+  margin-top: 30px;
+  left: 5px;
+  width: 0px;
+  height: 1px;
+  background: linear-gradient(270deg, #e51d37 0%, #17161d 100%);
+  transition: all 0.3s ease; 
+}
+
+.box-one-hover a:hover:before {
+    width: 95%;
+}
+
+/* Hover é uma propriedade utilizada para mudar a cor da fonte ao passar o Mouse por cima 
+
+.box-one-hover :hover{
+    color: white; 
+}
+
+*/
+
+.box-two {
+
+ /*  box-sizing: border-box; */
+ /*   display: inline-block; */
+ /*   flex-direction: column; */
+    
+    justify-content: center; 
+    align-items: center;
+    border: 1px solid #00A3FF ;
+    background-color: #06090f;
+    padding: 20px 45px;
+    width: 445px;
+    height: 265px;
+    float: right; 
+    margin-right: 50px;
+    color: #fafafa;
+    font-size: 1.4rem;
+    font-weight: 500;
+    box-sizing: border-box;
+    font-family: "Saira";
+    text-align: left;
+}
+
+.box-two-title {
+
+    color: #fafafa;
+}
+
+.box-two-description {
+
+    color: #b0b0b0;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.box-two-hover a {
+
+    transform: 2ms ease-in;
+    position: relative;  
+    text-decoration: none;
+    color:  #00a3ff; 
+}
+
+.box-two-hover a:before {
+
+  content: ' ';
+  position: absolute;
+  margin-top: 30px;
+  left: 5px;
+  width: 0px;
+  height: 1px;
+  background: linear-gradient(270deg, #00A3FF 0%, #17161d 100%);
+  transition: all 0.3s ease; 
+}
+
+.box-two-hover a:hover:before {
+
+    width: 95%;
+}
+
+.box-three {
+       
+    justify-content: center;
+    align-items: center;
+    background-color: #06090f;
+    padding: 20px 45px;
+    width: 907px;
+    height: 300px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    transition: all 1s ease 0.1s;     
+}
+
+.box-three:hover {
+
+    border: 1px solid #00A3FF; 
+}
+
+.box-three-title {
+
+    color: #fafafa;
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+.box-three-description {
+
+    color: #b0b0b0;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.repositorio {
+
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+
+.repositorio a {
+
+    color: #00A3FF;   
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: 400;  
+}
+
+.repositorio a:before {
+
+    content: ' ';
+    position: absolute; 
+    margin-top: 30px;
+    left: 5px;
+    width: 0px;
+    height: 1px;
+    background: linear-gradient(270deg, #00A3FF 0%, #17161d 100%);
+    transition: all 0.3s ease; 
+}
+
+.repositorio a:hover:before {
+
+    width: 95%;
+}
+
+.servicos {
+
+    margin-bottom: 50px;
+    margin-top: 17%;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #fafafa;
+    font-family: "Saira";
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.box-four {
+       
+    justify-content: center; 
+    align-items: center;
+    background-color: #06090f;
+    padding: 20px 45px;
+    width: 440px;
+    height: 265px;
+    float: right; 
+    margin-right: 46px;
+    color: #fafafa;
+    font-size: 1.4rem;
+    font-weight: 500;
+    box-sizing: border-box;  
+    font-family: "Saira";
+    text-align: left;
+    transition: all 1s ease 0.1s; 
+
+}
+
+.box-four:hover {
+    border: 1px solid #00A3FF; 
+}
+
+.box-five {
+
+    justify-content: center; 
+    align-items: center;
+    background-color: #06090f;
+    padding: 20px 45px;
+    width: 440px;
+    height: 265px;
+    float: right; 
+    margin-right: 26px;
+    color: #fafafa;
+    font-size: 1.4rem;
+    font-weight: 500;
+    box-sizing: border-box;
+    font-family: "Saira";
+    text-align: left;
+    transition: all 1s ease 0.1s; 
+}
+
+.box-five:hover {
+
+    border: 1px solid #00A3FF; 
+}
+
+.box-six {
+
+    /*  box-sizing: border-box; */
+    /*   display: inline-block; */
+    /*   flex-direction: column; */
+       
+    justify-content: center;
+    align-items: center;
+    background-color: #06090f;
+    padding: 20px 45px;
+    width: 907px;
+    height: 300px;
+    float: left;
+    color: #fafafa;
+    font-size: 1.4rem;
+    font-weight: 500;
+    box-sizing: border-box;
+    font-family: "Saira";
+    text-align: left;
+    margin-left: 55px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    transition: all 1s ease 0.1s; 
+}
+
+.box-six:hover {
+
+    border: 1px solid #00A3FF; 
+}
+
+.imagem-codigo { 
+
+    margin-bottom: 20px;
+}
+
+.imagem-icone { 
+
+    margin-bottom: 20px;
+}
+
+.imagem-layers { 
+
+    margin-bottom: 20px;
+}
+
+.habilidades {
+
+    display: flex;
+/*  position: absolute; */
+}
+
+.conhecimentos-titulo { 
+
+    margin-top: 80%;
+    margin-left: 50px;
+    font-family: "Saira";
+    color: #fafafa;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.conhecimentos { 
+
+    color: #b0b0b0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-left: 50px;
+    margin-top: 4%;
+}
+
+.box-seven {
+    margin-top: 23%;
+    width: 180px;
+    height: 140px;; 
+    transition: all 1s ease 0.1s;
+/*  margin-left: 55px; */
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+#tooltipText-seven {
+    visibility: hidden;
+}
+ 
+ .box-seven:hover #tooltipText-seven {
+     top: 30%;  
+     visibility: visible;  
+     opacity: 1; 
+}
+ 
+ .tooltipText-title-seven {
+     margin-top: 80px;
+     margin-bottom: 30px;
+     position: absolute;
+     font-size: 1.6rem;
+    font-weight: 500;  
+    font-family: "Saira";
+     
+}
+ 
+ .tooltipText-content-seven {
+     margin-top: 120px;
+     position: absolute;
+     font-size: 1rem;
+    font-weight: 500;  
+    font-family: "Saira";
+}
+
+.box-seven:hover {
+ /*   border: 1px solid #00A3FF;  */
+}
+
+.box-eight {
+    margin-top: 23%;
+    width: 180px;
+    height: 140px;; 
+    transition: all 1s ease 0.1s;
+/*  margin-left: 55px; */
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px; 
+}
+
+#tooltipText-eight {
+    visibility: hidden;
+}
+ 
+ .box-eight:hover #tooltipText-eight {
+     top: 30%;  
+     visibility: visible;  
+     opacity: 1; 
+}
+ 
+ .tooltipText-title-eight {
+     margin-top: 80px;
+     margin-bottom: 30px;
+     position: absolute;
+     font-size: 1.6rem;
+    font-weight: 500;  
+    font-family: "Saira";
+     
+}
+ 
+ .tooltipText-content-eight {
+     margin-top: 120px;
+     position: absolute;
+     font-size: 1rem;
+     font-weight: 500;  
+     font-family: "Saira";
+}
+ 
+.box-eight:hover {
+/*    border: 1px solid #00A3FF;  */
+}
+
+.box-nine {
+    margin-top: 23%;
+    width: 180px;
+    height: 140px;; 
+    transition: all 1s ease 0.1s;
+/*  margin-left: 55px; */
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px; 
+}
+
+#tooltipText-nine {
+   visibility: hidden;
+}
+
+.box-nine:hover #tooltipText-nine {
+    top: 30%;  
+    visibility: visible;  
+    opacity: 1; 
+}
+
+.tooltipText-title-nine {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    position: absolute;
+    font-size: 1.6rem;
+    font-weight: 500;
+    box-sizing: border-box;  
+    font-family: "Saira";
+    
+}
+
+.tooltipText-content-nine {
+    margin-top: 120px;
+    position: absolute;
+    margin-top: 120px;
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 500;  
+    font-family: "Saira";
+}
+
+.box-nine:hover {
+/*    border: 1px solid #00A3FF;  */
+}
+
+.box-ten {
+    margin-top: 23%;
+    width: 180px;
+    height: 140px;; 
+    transition: all 1s ease 0.1s;
+/*  margin-left: 55px; */
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px; 
+}
+
+#tooltipText {
+/*  top: 0; */
+/*  opacity: 0;  */
+/*  padding-bottom: 30%;  */
+ /* padding: 50px; */
+ /* display: flex; */
+    visibility: hidden;
+}
+
+.box-ten:hover #tooltipText {
+      top: 30%;  
+      visibility: visible;  
+      opacity: 1; 
+}
+
+.box-ten:hover {
+/*    border: 1px solid #00A3FF;     */
+}
+
+.tooltipText-title {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    position: absolute;
+    font-size: 1.6rem;
+    font-weight: 500;
+    box-sizing: border-box;  
+    font-family: "Saira";
+    
+}
+
+.tooltipText-content {
+    margin-top: 120px;
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 500;  
+    font-family: "Saira";
+}
+
+
+/* animação CSS */
+
+.line {
+      border-right: 2px solid rgb(15, 224, 95); 
+      white-space: nowrap;
+      overflow: hidden;
+      margin: 0;
+}
+
+.typing {
+
+    animation: blinkCursor 850ms steps(40) infinite normal, typing 4s steps(20) 1s normal both;
+}
+
+@keyframes typing {
+
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 14.6em;  
+    }
+}
+
+@keyframes blinkCursor {
+
+    from {
+        border-right-color: rgb(22, 143, 224);
+
+    }
+
+    to {
+        border-right-color: transparent; 
+       
+    }
+
+}
+
+.floating {
+
+	animation-name: floating;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+
+}
+
+@keyframes floating {
+
+	0% { transform: translate(0, 0px); }
+	50% { transform: translate(0, 15px); }
+	100% { transform: translate(0, -0px); }
+}
+
+
+
+/* rodapé */
+
+.rodape {
+
+    text-align: center;
+    margin-top: 300px;
+}
