@@ -1,2 +1,1 @@
-# javascript_html_css.projetos
-Atividades para composição do portfólio.
+Atividades práticas para desenvolvimento Front-end
