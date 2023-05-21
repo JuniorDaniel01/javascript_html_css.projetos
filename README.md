@@ -1,1 +1,1 @@
-Atividades práticas para desenvolvimento Front-end
+Atividades e desafios práticos para desenvolvimento Front-end
